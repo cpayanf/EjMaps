@@ -7,12 +7,24 @@
 	tools:context="com.coursera.cpayanf.ejmaps.MainActivity">
 
 	<TextView
+		android:id="@+id/lblHello"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Hello World!"
-		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/btnIrMaps"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Button"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/lblHello"
+		tools:layout_editor_absoluteX="65dp"
+		tools:layout_editor_absoluteY="53dp"
+		android:onClick="IrAMapa">
+	</Button>
 
 </android.support.constraint.ConstraintLayout>
